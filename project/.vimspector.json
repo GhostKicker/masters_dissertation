@@ -1,0 +1,30 @@
+{
+  "configurations": {
+    "Python: Attach To Vim": {
+      "variables": {
+        "port": "5678",
+        "host": "localhost"
+      },
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "request": "attach"
+      }
+    },
+    "CPP: Run current script": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "request": "launch",
+        "program": "/home/alexandr/works/_MAGA/DISSER/project/main",
+        "args": [ "*${args:--update-gadget-config}" ],
+        "justMyCode#json": "${justMyCode:true}",
+        "setupCommands": [
+        					{
+        						"description": "Enable pretty-printing for gdb",
+        						"text": "-enable-pretty-printing",
+        						"ignoreFailures": true
+        					}
+        				]
+              }
+    }
+  }
+}

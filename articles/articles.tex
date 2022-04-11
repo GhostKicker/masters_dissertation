@@ -1,0 +1,245 @@
+\documentclass[a4paper,12pt,preview,tikz]{report} 
+\usepackage[T2A]{fontenc}
+\usepackage{tikz}
+\usepackage{fancyvrb}
+\usetikzlibrary{datavisualization}
+\usetikzlibrary{datavisualization.formats.functions}
+\usetikzlibrary{shapes,positioning,intersections,quotes}
+\usepackage{changepage}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\usepackage{lipsum}
+\usepackage{upgreek}
+\usepackage[labelsep=period]{caption}
+\usepackage[russian]{babel}     %russian support
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb,amsfonts,amsmath,mathtext,cite,enumerate,float} 
+\usepackage{graphicx} 
+\usepackage{ragged2e}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+    language=C++,
+    breaklines=true, 
+    numbers=left,
+    basicstyle=\ttfamily,
+    language=C++,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green},
+    morecomment=[l][\color{magenta}]{\#},
+    showspaces=false,                
+    showstringspaces=false,
+}
+
+\lstset{
+  literate={а}{{\selectfont\char224}}1
+           {б}{{\selectfont\char225}}1
+           {в}{{\selectfont\char226}}1
+           {г}{{\selectfont\char227}}1
+           {д}{{\selectfont\char228}}1
+           {е}{{\selectfont\char229}}1
+           {ё}{{\"e}}1
+           {ж}{{\selectfont\char230}}1
+           {з}{{\selectfont\char231}}1
+           {и}{{\selectfont\char232}}1
+           {й}{{\selectfont\char233}}1
+           {к}{{\selectfont\char234}}1
+           {л}{{\selectfont\char235}}1
+           {м}{{\selectfont\char236}}1
+           {н}{{\selectfont\char237}}1
+           {о}{{\selectfont\char238}}1
+           {п}{{\selectfont\char239}}1
+           {р}{{\selectfont\char240}}1
+           {с}{{\selectfont\char241}}1
+           {т}{{\selectfont\char242}}1
+           {у}{{\selectfont\char243}}1
+           {ф}{{\selectfont\char244}}1
+           {х}{{\selectfont\char245}}1
+           {ц}{{\selectfont\char246}}1
+           {ч}{{\selectfont\char247}}1
+           {ш}{{\selectfont\char248}}1
+           {щ}{{\selectfont\char249}}1
+           {ъ}{{\selectfont\char250}}1
+           {ы}{{\selectfont\char251}}1
+           {ь}{{\selectfont\char252}}1
+           {э}{{\selectfont\char253}}1
+           {ю}{{\selectfont\char254}}1
+           {я}{{\selectfont\char255}}1
+           {А}{{\selectfont\char192}}1
+           {Б}{{\selectfont\char193}}1
+           {В}{{\selectfont\char194}}1
+           {Г}{{\selectfont\char195}}1
+           {Д}{{\selectfont\char196}}1
+           {Е}{{\selectfont\char197}}1
+           {Ё}{{\"E}}1
+           {Ж}{{\selectfont\char198}}1
+           {З}{{\selectfont\char199}}1
+           {И}{{\selectfont\char200}}1
+           {Й}{{\selectfont\char201}}1
+           {К}{{\selectfont\char202}}1
+           {Л}{{\selectfont\char203}}1
+           {М}{{\selectfont\char204}}1
+           {Н}{{\selectfont\char205}}1
+           {О}{{\selectfont\char206}}1
+           {П}{{\selectfont\char207}}1
+           {Р}{{\selectfont\char208}}1
+           {С}{{\selectfont\char209}}1
+           {Т}{{\selectfont\char210}}1
+           {У}{{\selectfont\char211}}1
+           {Ф}{{\selectfont\char212}}1
+           {Х}{{\selectfont\char213}}1
+           {Ц}{{\selectfont\char214}}1
+           {Ч}{{\selectfont\char215}}1
+           {Ш}{{\selectfont\char216}}1
+           {Щ}{{\selectfont\char217}}1
+           {Ъ}{{\selectfont\char218}}1
+           {Ы}{{\selectfont\char219}}1
+           {Ь}{{\selectfont\char220}}1
+           {Э}{{\selectfont\char221}}1
+           {Ю}{{\selectfont\char222}}1
+           {Я}{{\selectfont\char223}}1
+}
+
+
+\usepackage{geometry} % Меняем поля страницы
+\geometry{left=2cm}% левое поле
+\geometry{right=1.5cm}% правое поле
+\geometry{top=1cm}% верхнее поле
+\geometry{bottom=2cm}% нижнее поле
+
+
+\titleformat{\chapter}[hang]
+{\normalfont\huge\bfseries}{\thechapter.}{20pt}{}
+
+\begin{document}
+
+%\begin{center}
+\chapter{МЫСЛИ И ПЛАНЫ ПО ДИССЕРУ}
+%\end{center}
+
+\section{Статьи}
+
+\textbf{ПОСМОТРЕТЬ НИЗ ВИКИ-СТРАНИЦЫ!!!!}
+
+\subsection{DAPRA}
+
+\textbf{Прочитать}
+\begin{enumerate}
+    \item \href{http://acl.mit.edu/papers/LeonardJFR08.pdf}{DARPA: A Perception-Driven Autonomous Urban Vehicle. MIT} 
+    \item \href{https://www.ri.cmu.edu/pub_files/pub4/urmson_christopher_2008_1/urmson_christopher_2008_1.pdf}{Граф + Anytime D* (CMU’s Boss)}
+    \item \href{https://www.romela.org/wp-content/uploads/2015/05/Odin-Team-VictorTango%E2%80%99s-Entry-in-the-DARPA-Urban-Challenge.pdf}{Граф + A* (Virginia Tech)}
+
+\end{enumerate}
+
+\subsection{RRT}
+
+\textbf{Прочитаны}
+\begin{enumerate}
+    \item \href{https://arxiv.org/pdf/1105.1186.pdf}{Sampling-based Algorithms for Optimal Motion Planning}
+
+        Базовое описание алгоритмов. PRM, sPRM, k-sPRM, RRT, PRM*, k-PRM*, RRG, k-RRG, RRT*, k-RRT*. 
+\end{enumerate}
+
+\textbf{Прочитать}
+\begin{enumerate}
+    \item \href{https://users.aalto.fi/~hamalap5/FutureGameAnimation/p113-naderi.pdf}{RT-RRT*: A Real-Time Path Planning Algorithm Based On RRT*}
+    \item \href{http://idm-lab.org/bib/abstracts/papers/icra16.pdf}{RRT-Based Nonholonomic Motion Planning Using Any-Angle Path Biasing} 
+
+\end{enumerate}
+
+\subsection{Графовые методы}
+
+\textbf{Прочитал}
+\begin{enumerate}
+    \item \href{https://en.wikipedia.org/wiki/A*_search_algorithm}{A-star} 
+
+        Дейкстра с эвристикой
+
+    \item \href{https://en.wikipedia.org/wiki/Any-angle_path_planning}{Any-angle}
+
+        Можем ехать по гриду не в 8 сторон, а на любой угол.
+
+        Есть несколько алгоритмов, которые позволяют это делать, они основаны на А*:
+
+        \begin{enumerate}
+            \item Field D*, 3D Field D*, Multi-resulutional Field D*
+            \item Theta*, strict Theta*
+            \item Block A*
+            \item ANYA
+            \item CWave
+        \end{enumarate}
+
+    \item \href{https://web.mit.edu/16.412j/www/html/papers/original_dstar_icra94.pdf}{D-star}
+
+        Умеем во время планирования обрабатывать изменения стоимости ребер
+
+    \item \href{https://www.ri.cmu.edu/pub_files/pub1/stentz_anthony__tony__1995_1/stentz_anthony__tony__1995_1.pdf}{Focused D*}
+
+        Умеем немного сокращать пространство поиска в D*
+
+    \item \href{http://idm-lab.org/bib/abstracts/papers/tro05.pdf}{D* Lite}
+
+        Типа LPA*, умеем кэшировать стейт поиска и менять его иногда
+
+    \item \href{https://www.ri.cmu.edu/pub_files/pub4/ferguson_david_2006_3/ferguson_david_2006_3.pdf}{Field D*}
+
+        Умеем делать путь более прямым
+
+    \item \href{https://aaai.org/Papers/JAIR/Vol28/JAIR-2808.pdf}{Anytime A*}
+
+        Умеем находить субоптимальное решение, а затем его улучшать
+
+    \item \href{https://proceedings.neurips.cc/paper/2003/file/ee8fe9093fbbb687bef15a38facc44d2-Paper.pdf}{ARA*}
+
+        Умеем улучшать субоптимальное решение
+
+    \item \href{https://aaai.org/Papers/ICAPS/2005/ICAPS05-027.pdf}{Anytime Dynamic A*}
+
+        Умеем репланнить предыдущий найденный путь, использовать его на текущем тике
+
+    \item \href{http://idm-lab.org/bib/abstracts/papers/aaai10b.pdf}{Lazy-theta*}
+
+        Умеем в 3D планировать с хорошей погрешностью
+
+    \item \href{https://webdocs.cs.ualberta.ca/~jonathan/publications/ai_publications/AAAI2011.pdf}{Block A*}
+
+        Умеем в датабазе хранить стейт А*??
+
+
+\end{enumerate}
+
+\textbf{Прочитать}
+\begin{enumerate}
+    \item \href{https://en.wikipedia.org/wiki/Theta*}{Theta*}
+
+        Умеем делать any-angle A* типа
+
+    \item \href{https://sci-hub.hkvisa.net/10.1109/ICRA.2017.7989733}{CWave} \href{https://sci-hub.hkvisa.net/10.1017/S0263574719000560}{Link2}
+    \item \href{https://www.researchgate.net/publication/305175423_Optimal_Any-Angle_Pathfinding_In_Practice}{ANYA}
+
+\end{enumerate}
+
+\subsection{Lattice Planner}
+
+\textbf{Прочитать}
+\begin{enumerate}
+    \item \href{https://rpal.cs.cornell.edu/docs/PivEtal_JFR_2009.pdf}{Хорошая подробная статья про мобильных роботов на основе lattice-а без полос.} 
+    \item \href{https://en.wikipedia.org/wiki/Any-angle_path_plannin://arxiv.org/pdf/1809.02399.pdf}{Интересный вариант совмещение RRT и lattice идей.}
+    \item \href{http://persoal.citius.usc.es/manuel.mucientes/pubs/Gonzalez-Sieira18_ras.pdf}{Интересная идея с сеткой разной градации}
+
+\end{enumerate}
+
+
+\end{document}
+
+
